@@ -65,7 +65,7 @@ function flatjson_parser() {
   local APPEND=
   local IS_VALUE=
 
-  lexer "$DOC"
+  flatjson_lexer "$DOC"
 
   for (( i=0; i < "${#TOKENS[@]}"; i++ )); do
     TOKEN="${TOKENS[i]}"
